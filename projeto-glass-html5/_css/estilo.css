@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* Formatação de Textos e Cores (Corpo e Paragrafos)*/
+body{
+    background-color: hsla(235, 231%, 231%, 0.5); /* COR DE FUNDO EM CORES MATRIZES */
+    color: rgba(0, 0, 0, 0.7); /* CORES EM RGB PARA AS LETRAS DO CORPO*/
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/* Formatação de Imagens com Legendas, Cores e tamanho*/
+figure.foto-legenda {
+    position: relative; /* DIZ QUE O TAMANHO DO CODIGO ESSSE CONTEINER É RELATIVO A ELE */
+    border: 8px solid white; /* PIXEL / TIPO / COR */
+    box-shadow: 2px 1px 5px black; /* HORIZONTAL * VERTICAL * ESPALHAMENTO E COR */
+}
+
+figure.foto-legenda img {
+    width: 100%; /*  LARGURA */
+    height: 100%; /* TAMANHO */
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0; /* DIZ QUE A OPACiADADE É 0% NADA */
+    position: absolute; /* DIZ QUE A LEGENDA DA TAG SÓ SERÁ DO TAMANHO ABSOLUTO DA IMAGEM */
+    top: 0px; /* DIZ EM PIXEL ONDE FICARA A LEGENDA UTILIZADA (0 PARA EM CIMA)*/
+    background-color: rgba(0,0,0,.4); /* CRIAR TRANSPARENCIA */
+    color: white; /* COR DA LEGENDA */
+    width: 100%; /* LARGURA DA TRANSPARENCIA */
+    height: 100%; /* ALTURA DA TRANSPARENCIA */
+    padding: 10px; /* CRIA UM ESPAÇO NA LEGENDA */
+    box-sizing: border-box; /* CRIAR UM BOX DENTRO DA BORDA PARA NÃO UTRAPASSAR ELA */
+    transition: opacity 1s; /* ESSA CONFIGURAÇÃO GERA UM EFEITO DE TRANSIÇÃO AO PASSAR O MOUSE */
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1; /* DIZ QUE A OPCADADE É 100% */
+
+    /* ESSA TAG (hover) VAI MOSTRAR A LEGENDA QUANDO PASSAR O
+     MOUSE POR CIMA DA IMAGEM */
+}
+
+/* FORMATACAO DO MENU */
+nav#menu {
+    display: block; /* ESSA CONFIGURACAO DIZ QUE O BLOCO PODE FLUTUAR PELA TELA DO SITE */
+
+}
+nav#menu ul { /* <nav>("#" QUER DIZER A ID) menu (É O NOME DA ID QUE DEI NO index.html) ul (É O QUE VOU ALTERAR DO <nav>)*/
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute; /* POSIÇÃO DE TIPO ABSOLUTA PARA PASSAR POR CIMA DOS DOCUMENTOS */
+    top: -19px; /* DEIXA ELE NA MARGEM DO TOPO DA TELA */
+    left: 300px; /* JOGA OS BOTOES MAIS PARA A DIREITA DA TELA */
+}
+nav#menu li {
+    display: inline-block; /* ESSA CONFIGURAÇÃO FAZ COM QUE OS NOME FIQUEM LADO A LADO VERTICALMENTE */
+    background-color: lightgrey; /* ADICIONA UM QUADRADO COM COR DE FUNDO CINZA CLARO */
+    padding: 10px;/* ADICIONA A BORDA NO TAMANHO DE 10PX */
+    margin: 2px; /* MARGEM DE ESPAÇO ENTRE OS BOTOES */
+    -webkit-transition: background-color 1s; /* NAVEGADOR safari */
+    -moz-transition: background-color 1s; /* NAVEGADOR mozila */
+    -ms-transition: background-color 1s; /* NAVEGADOR microsoft */
+    -o-transition: background-color 1s; /* NAVEGADOR opera */
+    transition: background-color 1s; /* GERA UM EFEITO DE TRANSIÇÃO DE 1 SEGUNDO NO BOTAO */
+}
+nav#menu li:hover {
+    background-color: gray; /* ESSA CONFIG GERA UM EFEITO DE COR AO PASSAR O MOUSE EM CIMA DO BOTAO */
+
+}
+nav#menu h1 {
+    display: none; /* ESSA CONFIGURACAO DIZ QUE O ELEMENTO NOME DA TEG <h1> NÃO VAI APARECER NO NAVEGADOR */
+}
+nav#menu a {
+    color: black; /* COR DA FONTE DA TAG <a> ANCORA QUE SÃO OS BOTOES */
+    text-decoration: none; /* PARA TIRAR O SUBLINHADO DOS NOMES DOS BOTOES */
+}
+nav#menu a:hover {
+    color: white; /* MUDA A COR DO NOME QUANDO O MOUSE PASSAR POR ELE */
+}
+
