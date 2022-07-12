@@ -2,26 +2,40 @@
 
 /* Formatação de Textos e Cores (Corpo e Paragrafos)*/
 body{
-    background-color: hsla(235, 231%, 231%, 0.5); /* COR DE FUNDO EM CORES MATRIZES */
-    color: rgba(0, 0, 0, 0.7); /* CORES EM RGB PARA AS LETRAS DO CORPO*/
+    background-color: lightgrey; /* COR DO FUNDO DA PAGINA (CORPO) */
+    color: rgba(0, 0, 0, 1); /* CORES EM RGB PARA AS LETRAS DO CORPO*/
+}
+/* Interface */
+div#interface {
+    width: 1400px;
+    background-color: white; /* COR DO FUNDO DA INTERFACE */
+    margin: -21px auto 0px auto; /* MARGEM DA BORDA (CIMA * DIREITA * BAIXO * ESQUERDA) */
+    box-shadow: 0px 0px 10px gray; /* , rgba(0, 0, 0, .9) /* CRIA SOMBRA ATRÁS DA INTERFACE */
+    padding: 10px; /* ESSA CONFIG GERA UM ESPAÇO EM CIMA, DIREITA, BAIXO E ESQUERDA DAS PALAVRAS PARA NÃO FICAREM GRUDAS A BORDA */
+
+}
+header#cabecalho img#icone-oculos {
+    position: absolute; /* DEIXAR A IMAGEM EM TAMANHO ABSOLUTO PARA FLUTUAR PELA PAGINA */
+    top: 50px; /* DEIXAR NO TOP COM PIXEL DE 50 */
+    left: 1380px; /* MOVER PARA ESQUERDA NO TAMNHO DE 1380 PIXEL */
+}
+header#cabecalho {
+
 }
 p {
-    text-align: justify;
-    text-indent: 50px;
+    text-align: justify; /* FAZ UM AJUSTE NO TEXTO */
+    text-indent: 50px; /* TAMANHO DO ESPAÇO VAZIO ANTES DO COMEÇO DAS FRASES*/
 }
-
 /* Formatação de Imagens com Legendas, Cores e tamanho*/
 figure.foto-legenda {
     position: relative; /* DIZ QUE O TAMANHO DO CODIGO ESSSE CONTEINER É RELATIVO A ELE */
     border: 8px solid white; /* PIXEL / TIPO / COR */
     box-shadow: 2px 1px 5px black; /* HORIZONTAL * VERTICAL * ESPALHAMENTO E COR */
 }
-
 figure.foto-legenda img {
     width: 100%; /*  LARGURA */
     height: 100%; /* TAMANHO */
 }
-
 figure.foto-legenda figcaption {
     opacity: 0; /* DIZ QUE A OPACiADADE É 0% NADA */
     position: absolute; /* DIZ QUE A LEGENDA DA TAG SÓ SERÁ DO TAMANHO ABSOLUTO DA IMAGEM */
@@ -34,25 +48,22 @@ figure.foto-legenda figcaption {
     box-sizing: border-box; /* CRIAR UM BOX DENTRO DA BORDA PARA NÃO UTRAPASSAR ELA */
     transition: opacity 1s; /* ESSA CONFIGURAÇÃO GERA UM EFEITO DE TRANSIÇÃO AO PASSAR O MOUSE */
 }
-
 figure.foto-legenda:hover figcaption {
     opacity: 1; /* DIZ QUE A OPCADADE É 100% */
 
     /* ESSA TAG (hover) VAI MOSTRAR A LEGENDA QUANDO PASSAR O
      MOUSE POR CIMA DA IMAGEM */
 }
-
 /* FORMATACAO DO MENU */
 nav#menu {
     display: block; /* ESSA CONFIGURACAO DIZ QUE O BLOCO PODE FLUTUAR PELA TELA DO SITE */
-
 }
 nav#menu ul { /* <nav>("#" QUER DIZER A ID) menu (É O NOME DA ID QUE DEI NO index.html) ul (É O QUE VOU ALTERAR DO <nav>)*/
     list-style: none;
     text-transform: uppercase;
     position: absolute; /* POSIÇÃO DE TIPO ABSOLUTA PARA PASSAR POR CIMA DOS DOCUMENTOS */
-    top: -19px; /* DEIXA ELE NA MARGEM DO TOPO DA TELA */
-    left: 300px; /* JOGA OS BOTOES MAIS PARA A DIREITA DA TELA */
+    top: -21px; /* DEIXA ELE NA MARGEM DO TOPO DA TELA */
+    left: 900px; /* JOGA OS BOTOES MAIS PARA A DIREITA DA TELA */
 }
 nav#menu li {
     display: inline-block; /* ESSA CONFIGURAÇÃO FAZ COM QUE OS NOME FIQUEM LADO A LADO VERTICALMENTE */
@@ -67,7 +78,6 @@ nav#menu li {
 }
 nav#menu li:hover {
     background-color: gray; /* ESSA CONFIG GERA UM EFEITO DE COR AO PASSAR O MOUSE EM CIMA DO BOTAO */
-
 }
 nav#menu h1 {
     display: none; /* ESSA CONFIGURACAO DIZ QUE O ELEMENTO NOME DA TEG <h1> NÃO VAI APARECER NO NAVEGADOR */
