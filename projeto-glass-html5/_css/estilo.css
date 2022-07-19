@@ -1,10 +1,17 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap'); /* FONTE PEGADA NO SITE GOOGLE/FONTS */
+@font-face {
+    font-family: 'FonteLogo'; /* NOME DA FONTE QUE QUERO */
+    src: url("../_fonts/bubblegum-sans-regular.otf"); /* LOCAL DA FONTE EXTERNA */
+}
 
 /* Formatação de Textos e Cores (Corpo e Paragrafos)*/
 body{
     background-color: lightgrey; /* COR DO FUNDO DA PAGINA (CORPO) */
     color: rgba(0, 0, 0, 1); /* CORES EM RGB PARA AS LETRAS DO CORPO*/
 }
+
+
 /* Interface */
 div#interface {
     width: 1400px;
@@ -12,8 +19,8 @@ div#interface {
     margin: -21px auto 0px auto; /* MARGEM DA BORDA (CIMA * DIREITA * BAIXO * ESQUERDA) */
     box-shadow: 0px 0px 10px gray; /* , rgba(0, 0, 0, .9) /* CRIA SOMBRA ATRÁS DA INTERFACE */
     padding: 10px; /* ESSA CONFIG GERA UM ESPAÇO EM CIMA, DIREITA, BAIXO E ESQUERDA DAS PALAVRAS PARA NÃO FICAREM GRUDAS A BORDA */
-
 }
+
 
 header#cabecalho img#icone-oculos {
     position: absolute; /* DEIXAR A IMAGEM EM TAMANHO ABSOLUTO PARA FLUTUAR PELA PAGINA */
@@ -26,7 +33,7 @@ header#cabecalho { /* CONFIGURACAO DO CABEÇALHO IMG */
     background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /* ADD UMA IMG DO GOOGLE GLASS E DIZ QUE E SO UMA */
 }
 header#cabecalho h1 { /* CONFIGURACAO DO CABEÇALHO COR E FONTE */
-    font-family: Arial, sans-serif; /* TIPO FONTE */
+    font-family: 'FonteLogo', sans-serif; /* FONTE EXTERNA CONFIGURADA NO @font-face */
     font-size: 30px; /* TAMANHO FONTE */
     color: #606060; /* COR FONTE EM HEXADECIMAL PARA FICAR MAIS FORTE */
     text-shadow: 1px 1px 3px rgba(0,0,0,.6); /* px ALT - px LADO - px ESPALHAMENTO - rgba(0,0,0,.6) PRETO E 0.6% DE TRANSPARENCIA */
@@ -34,16 +41,19 @@ header#cabecalho h1 { /* CONFIGURACAO DO CABEÇALHO COR E FONTE */
     margin-bottom: 0px; /* MARGEM EM PIXEL DA PARTE DE BAIXO (ISSO VAI FAZER ELE TER A MERGEM DE BAIXO 0 PARA O SUBTITULI CHEGAR BEM PROXIMO DELE)*/
 }
 header#cabecalho h2 {
-    font-family: Arial, sans-serif;
+    font-family: 'Titillium Web', sans-serif; /* ESSA CNFIGURACAO VEM DA FONTE EXTERNA DO GOOGLE http */
     color: #888888; /* COR MAIS CLARO EM HEXADICIMAL */
     padding: 0px; /* CRIA ESPACO NO COMECO DA PALAVRA */
     margin-top: 0px; /* MARGEM EM PIXEL DA PARTE DE CIMA (ISSO VAI FAZER O SUB-TITULO COLAR NO TITULO PRINCIPAL "FICAR BEM ABAIXO DELE")*/
 }
 
+
 p {
     text-align: justify; /* FAZ UM AJUSTE NO TEXTO */
     text-indent: 50px; /* TAMANHO DO ESPAÇO VAZIO ANTES DO COMEÇO DAS FRASES*/
 }
+
+
 /* Formatação de Imagens com Legendas, Cores e tamanho*/
 figure.foto-legenda {
     position: relative; /* DIZ QUE O TAMANHO DO CODIGO ESSSE CONTEINER É RELATIVO A ELE */
