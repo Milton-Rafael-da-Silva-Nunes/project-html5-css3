@@ -14,14 +14,32 @@ div#interface {
     padding: 10px; /* ESSA CONFIG GERA UM ESPAÇO EM CIMA, DIREITA, BAIXO E ESQUERDA DAS PALAVRAS PARA NÃO FICAREM GRUDAS A BORDA */
 
 }
+
 header#cabecalho img#icone-oculos {
     position: absolute; /* DEIXAR A IMAGEM EM TAMANHO ABSOLUTO PARA FLUTUAR PELA PAGINA */
     top: 50px; /* DEIXAR NO TOP COM PIXEL DE 50 */
-    left: 1380px; /* MOVER PARA ESQUERDA NO TAMNHO DE 1380 PIXEL */
+    left: 1350px; /* MOVER PARA ESQUERDA NO TAMNHO DE 1380 PIXEL */
 }
-header#cabecalho {
+header#cabecalho { /* CONFIGURACAO DO CABEÇALHO IMG */
+    border-bottom: 1px gray solid; /*  CONFIGURACAO PARA CRIAR DIVISAO (LINHA)*/
+    height: 135px; /* DEFINE O TAMANHO DO CABECALHO (LINHA DE DIVISAO) */
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /* ADD UMA IMG DO GOOGLE GLASS E DIZ QUE E SO UMA */
+}
+header#cabecalho h1 { /* CONFIGURACAO DO CABEÇALHO COR E FONTE */
+    font-family: Arial, sans-serif; /* TIPO FONTE */
+    font-size: 30px; /* TAMANHO FONTE */
+    color: #606060; /* COR FONTE EM HEXADECIMAL PARA FICAR MAIS FORTE */
+    text-shadow: 1px 1px 3px rgba(0,0,0,.6); /* px ALT - px LADO - px ESPALHAMENTO - rgba(0,0,0,.6) PRETO E 0.6% DE TRANSPARENCIA */
+    padding: 0px; /* CRIA ESPACO NO COMECO DA PALAVRA */
+    margin-bottom: 0px; /* MARGEM EM PIXEL DA PARTE DE BAIXO (ISSO VAI FAZER ELE TER A MERGEM DE BAIXO 0 PARA O SUBTITULI CHEGAR BEM PROXIMO DELE)*/
+}
+header#cabecalho h2 {
+    font-family: Arial, sans-serif;
+    color: #888888; /* COR MAIS CLARO EM HEXADICIMAL */
+    padding: 0px; /* CRIA ESPACO NO COMECO DA PALAVRA */
+    margin-top: 0px; /* MARGEM EM PIXEL DA PARTE DE CIMA (ISSO VAI FAZER O SUB-TITULO COLAR NO TITULO PRINCIPAL "FICAR BEM ABAIXO DELE")*/
+}
 
-}
 p {
     text-align: justify; /* FAZ UM AJUSTE NO TEXTO */
     text-indent: 50px; /* TAMANHO DO ESPAÇO VAZIO ANTES DO COMEÇO DAS FRASES*/
