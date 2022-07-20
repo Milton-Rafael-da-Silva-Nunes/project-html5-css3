@@ -5,6 +5,7 @@
     src: url("../_fonts/bubblegum-sans-regular.otf"); /* LOCAL DA FONTE EXTERNA */
 }
 
+
 /* Formatação de Textos e Cores (Corpo e Paragrafos)*/
 body{
     background-color: lightgrey; /* COR DO FUNDO DA PAGINA (CORPO) */
@@ -22,6 +23,7 @@ div#interface {
 }
 
 
+/* Cabeçalho */
 header#cabecalho img#icone-oculos {
     position: absolute; /* DEIXAR A IMAGEM EM TAMANHO ABSOLUTO PARA FLUTUAR PELA PAGINA */
     top: 50px; /* DEIXAR NO TOP COM PIXEL DE 50 */
@@ -36,7 +38,7 @@ header#cabecalho h1 { /* CONFIGURACAO DO CABEÇALHO COR E FONTE */
     font-family: 'FonteLogo', sans-serif; /* FONTE EXTERNA CONFIGURADA NO @font-face */
     font-size: 30px; /* TAMANHO FONTE */
     color: #606060; /* COR FONTE EM HEXADECIMAL PARA FICAR MAIS FORTE */
-    text-shadow: 1px 1px 3px rgba(0,0,0,.6); /* px ALT - px LADO - px ESPALHAMENTO - rgba(0,0,0,.6) PRETO E 0.6% DE TRANSPARENCIA */
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6); /* px ALT - px LADO - px ESPALHAMENTO - rgba(0,0,0,.6) PRETO E 0.6% DE TRANSPARENCIA */
     padding: 0px; /* CRIA ESPACO NO COMECO DA PALAVRA */
     margin-bottom: 0px; /* MARGEM EM PIXEL DA PARTE DE BAIXO (ISSO VAI FAZER ELE TER A MERGEM DE BAIXO 0 PARA O SUBTITULI CHEGAR BEM PROXIMO DELE)*/
 }
@@ -48,6 +50,7 @@ header#cabecalho h2 {
 }
 
 
+/* Paragrafos */
 p {
     text-align: justify; /* FAZ UM AJUSTE NO TEXTO */
     text-indent: 50px; /* TAMANHO DO ESPAÇO VAZIO ANTES DO COMEÇO DAS FRASES*/
@@ -82,6 +85,8 @@ figure.foto-legenda:hover figcaption {
     /* ESSA TAG (hover) VAI MOSTRAR A LEGENDA QUANDO PASSAR O
      MOUSE POR CIMA DA IMAGEM */
 }
+
+
 /* FORMATACAO DO MENU */
 nav#menu {
     display: block; /* ESSA CONFIGURACAO DIZ QUE O BLOCO PODE FLUTUAR PELA TELA DO SITE */
@@ -117,4 +122,28 @@ nav#menu a {
 nav#menu a:hover {
     color: white; /* MUDA A COR DO NOME QUANDO O MOUSE PASSAR POR ELE */
 }
+
+
+/* CONFIGURAÇÃO DA section - aside & footer */
+section#corpo {
+    display: block; /* PARA A section SER MOSTRADA COMO BLOCO */
+    width: 750px; /* LARGURA EM PIXEL DO BLOCO */
+    float: left; /* FAZ ESSA PARTE FLUTUAR NA ESQUERDA */
+    border-right: 1px solid #606060; /* CRIA LINHA NA LATERAL DIREITA */
+    padding: 10px; /* CRIA ESPAÇO NA LINHA COM AS LETRAS */
+}
+aside#lateral {
+    display: block; /* PARA A section SER MOSTRADA COMO BLOCO */
+    width: 620px; /* LARGURA EM PIXEL DO BLOCO */
+    float: right; /* FAZ ESSA PARTE FLUTUAR NA DIREITA */
+}
+footer#rodape {
+    clear: both; /* ESSA CONFIGURACAO VAI ORGANIZAR O RODAPE QUE ESTA NA FLUTUACAO DA DIREITA E ESQUERDA JOGANDO-O PARA BAIXO */
+    border-top: 1px solid #606060; /* CRIO UMA LINHA NO TOP DO footer PARA PREENCHER CONFORME O DESING */
+}
+footer#rodape p {
+    text-align: center; /* ALINHO O TEXTO DO RODAPE NO CENTRO */
+}
+
+
 
