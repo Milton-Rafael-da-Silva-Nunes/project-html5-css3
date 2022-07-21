@@ -27,7 +27,7 @@ div#interface {
 header#cabecalho img#icone-oculos {
     position: absolute; /* DEIXAR A IMAGEM EM TAMANHO ABSOLUTO PARA FLUTUAR PELA PAGINA */
     top: 50px; /* DEIXAR NO TOP COM PIXEL DE 50 */
-    left: 1350px; /* MOVER PARA ESQUERDA NO TAMNHO DE 1380 PIXEL */
+    left: 1380px; /* MOVER PARA ESQUERDA NO TAMNHO DE 1380 PIXEL */
 }
 header#cabecalho { /* CONFIGURACAO DO CABEÇALHO IMG */
     border-bottom: 1px gray solid; /*  CONFIGURACAO PARA CRIAR DIVISAO (LINHA)*/
@@ -132,6 +132,20 @@ section#corpo {
     border-right: 1px solid #606060; /* CRIA LINHA NA LATERAL DIREITA */
     padding: 10px; /* CRIA ESPAÇO NA LINHA COM AS LETRAS */
 }
+table#tabelaspec caption {
+    color: #606060; /* COR DO TUTULO DA TABELA */
+    font-size: 15px; /* TAMANHO DA FONTE DO TITULO */
+    font-family: 'Edu QLD Beginner', cursive; /* ESTILO DA FONTE */
+}
+table#tabelaspec {
+    border: 1px solid #606060; /* CRIA LINHAS EM FORMA DE QUADRADO PARA TRNASFORMAR EM BORDA */
+    border-spacing: 0px; /* NAO GERA ESPACO ENTRE AS BORDAS */
+    margin: auto; /* PARA CENTRALIZAR O QUADRADO(BORDA) */
+}
+table#tabelaspec td {
+    border: 1px solid #606060; /* CRIA LINHAS PARA FAZER UMA BORDA NO <td> */
+}
+
 aside#lateral {
     display: block; /* PARA A section SER MOSTRADA COMO BLOCO */
     width: 620px; /* LARGURA EM PIXEL DO BLOCO */
@@ -144,6 +158,7 @@ footer#rodape {
 footer#rodape p {
     text-align: center; /* ALINHO O TEXTO DO RODAPE NO CENTRO */
 }
+
 
 
 
