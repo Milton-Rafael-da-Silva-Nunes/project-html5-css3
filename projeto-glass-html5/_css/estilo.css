@@ -8,52 +8,103 @@
 
 /* Formatação de Textos e Cores (Corpo e Paragrafos)*/
 body{
-    background-color: lightgrey; /* COR DO FUNDO DA PAGINA (CORPO) */
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3; /* COR DO FUNDO DA PAGINA (CORPO) */
     color: rgba(0, 0, 0, 1); /* CORES EM RGB PARA AS LETRAS DO CORPO*/
 }
 
 
-/* Interface */
+/* INTERFACE */
 div#interface {
-    width: 1400px;
-    background-color: white; /* COR DO FUNDO DA INTERFACE */
+    width: 1450px;
+    background-color: #ffffff; /* COR DO FUNDO DA INTERFACE */
     margin: -21px auto 0px auto; /* MARGEM DA BORDA (CIMA * DIREITA * BAIXO * ESQUERDA) */
-    box-shadow: 0px 0px 10px gray; /* , rgba(0, 0, 0, .9) /* CRIA SOMBRA ATRÁS DA INTERFACE */
-    padding: 10px; /* ESSA CONFIG GERA UM ESPAÇO EM CIMA, DIREITA, BAIXO E ESQUERDA DAS PALAVRAS PARA NÃO FICAREM GRUDAS A BORDA */
+    box-shadow: 0px 0px 20px #888888; /* , rgba(0, 0, 0, .9) /* CRIA SOMBRA ATRÁS DA INTERFACE */
+    padding: 20px; /* ESSA CONFIG GERA UM ESPAÇO EM CIMA, DIREITA, BAIXO E ESQUERDA DAS PALAVRAS PARA NÃO FICAREM GRUDAS A BORDA */
 }
 
 
-/* Cabeçalho */
+/* CABECALHO */
 header#cabecalho img#icone-oculos {
     position: absolute; /* DEIXAR A IMAGEM EM TAMANHO ABSOLUTO PARA FLUTUAR PELA PAGINA */
-    top: 50px; /* DEIXAR NO TOP COM PIXEL DE 50 */
-    left: 1380px; /* MOVER PARA ESQUERDA NO TAMNHO DE 1380 PIXEL */
+    top: 53px; /* DEIXAR NO TOP COM PIXEL DE 50 */
+    left: 1410px; /* MOVER PARA ESQUERDA NO TAMNHO DE 1380 PIXEL */
 }
-header#cabecalho { /* CONFIGURACAO DO CABEÇALHO IMG */
+/* IMAGEM glass */
+header#cabecalho {
     border-bottom: 1px gray solid; /*  CONFIGURACAO PARA CRIAR DIVISAO (LINHA)*/
-    height: 135px; /* DEFINE O TAMANHO DO CABECALHO (LINHA DE DIVISAO) */
-    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /* ADD UMA IMG DO GOOGLE GLASS E DIZ QUE E SO UMA */
+    height: 140px; /* DEFINE O TAMANHO DO CABECALHO (LINHA DE DIVISAO) */
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 92px; /* DIZ QUE E SO UMA E DEFINO OS TAMANHOS */
 }
-header#cabecalho h1 { /* CONFIGURACAO DO CABEÇALHO COR E FONTE */
+/* CONFIGURACAO DO CABEÇALHO COR E FONTE */
+header#cabecalho h1 {
+    margin: 5px 0px 0px 0px; /* CONFIGURANDO A POSIÇÃO DA PALAVRA GOOGLE FLASS A 1ª */
     font-family: 'FonteLogo', sans-serif; /* FONTE EXTERNA CONFIGURADA NO @font-face */
-    font-size: 30px; /* TAMANHO FONTE */
     color: #606060; /* COR FONTE EM HEXADECIMAL PARA FICAR MAIS FORTE */
-    text-shadow: 1px 1px 1px rgba(0,0,0,.6); /* px ALT - px LADO - px ESPALHAMENTO - rgba(0,0,0,.6) PRETO E 0.6% DE TRANSPARENCIA */
+    font-size: 40px; /* TAMANHO FONTE */
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5); /* px ALT - px LADO - px ESPALHAMENTO - rgba(0,0,0,.6) PRETO E 0.6% DE TRANSPARENCIA */
     padding: 0px; /* CRIA ESPACO NO COMECO DA PALAVRA */
-    margin-bottom: 0px; /* MARGEM EM PIXEL DA PARTE DE BAIXO (ISSO VAI FAZER ELE TER A MERGEM DE BAIXO 0 PARA O SUBTITULI CHEGAR BEM PROXIMO DELE)*/
 }
+/* CONFIGURANDO O SUBTITULO DO GOOGLE GLASS */
 header#cabecalho h2 {
-    font-family: 'Titillium Web', sans-serif; /* ESSA CNFIGURACAO VEM DA FONTE EXTERNA DO GOOGLE http */
+    font-family: 'Titillium Web', sans-serif; /* ESSA CONFIGURACAO VEM DA FONTE EXTERNA DO GOOGLE http */
     color: #888888; /* COR MAIS CLARO EM HEXADICIMAL */
+    font-size: 19px; /* TAMANHO FONTE */
     padding: 0px; /* CRIA ESPACO NO COMECO DA PALAVRA */
     margin-top: 0px; /* MARGEM EM PIXEL DA PARTE DE CIMA (ISSO VAI FAZER O SUB-TITULO COLAR NO TITULO PRINCIPAL "FICAR BEM ABAIXO DELE")*/
 }
 
 
-/* Paragrafos */
+/* PARAGRAFOS */
 p {
     text-align: justify; /* FAZ UM AJUSTE NO TEXTO */
-    text-indent: 50px; /* TAMANHO DO ESPAÇO VAZIO ANTES DO COMEÇO DAS FRASES*/
+    text-indent: 30px; /* TAMANHO DO ESPAÇO VAZIO ANTES DO COMEÇO DAS FRASES*/
+}
+/* FORMATANDO LINKS */
+a {
+    color: #606060;
+    text-decoration: none; /* RETIRAR EFEITOS E DEIXAR ELA SIMPLES SEM NADA */
+}
+a:hover { /* CRIA EFEITOS COM UNDERLINE QUANDO PASSA EM CIMA DA PALAVRA */
+   text-decoration: underline;
+}
+
+
+/* FORMATACAO DO MENU */
+nav#menu {
+    display: block; /* ESSA CONFIGURACAO DIZ QUE O BLOCO PODE FLUTUAR PELA TELA DO SITE */
+}
+nav#menu ul { /* <nav>("#" QUER DIZER A ID) menu (É O NOME DA ID QUE DEI NO index.html) ul (É O QUE VOU ALTERAR DO <nav>)*/
+    list-style: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    position: absolute; /* POSIÇÃO DE TIPO ABSOLUTA PARA PASSAR POR CIMA DOS DOCUMENTOS */
+    top: -21px; /* DEIXA ELE NA MARGEM DO TOPO DA TELA */
+    left: 900px; /* JOGA OS BOTOES MAIS PARA A DIREITA DA TELA */
+}
+nav#menu li {
+    display: inline-block; /* ESSA CONFIGURAÇÃO FAZ COM QUE OS NOME FIQUEM LADO A LADO VERTICALMENTE */
+    background-color: lightgrey; /* ADICIONA UM QUADRADO COM COR DE FUNDO CINZA CLARO */
+    padding: 10px;/* ADICIONA A BORDA NO TAMANHO DE 10PX */
+    margin: 2px; /* MARGEM DE ESPAÇO ENTRE OS BOTOES */
+    -webkit-transition: background-color 1s; /* NAVEGADOR safari */
+    -moz-transition: background-color 1s; /* NAVEGADOR mozila */
+    -ms-transition: background-color 1s; /* NAVEGADOR microsoft */
+    -o-transition: background-color 1s; /* NAVEGADOR opera */
+    transition: background-color 1s; /* GERA UM EFEITO DE TRANSIÇÃO DE 1 SEGUNDO NO BOTAO */
+}
+nav#menu li:hover {
+    background-color: gray; /* ESSA CONFIG GERA UM EFEITO DE COR AO PASSAR O MOUSE EM CIMA DO BOTAO */
+}
+nav#menu h1 {
+    display: none; /* ESSA CONFIGURACAO DIZ QUE O ELEMENTO NOME DA TEG <h1> NÃO VAI APARECER NO NAVEGADOR */
+}
+nav#menu a {
+    color: black; /* COR DA FONTE DA TAG <a> ANCORA QUE SÃO OS BOTOES */
+    text-decoration: none; /* PARA TIRAR O SUBLINHADO DOS NOMES DOS BOTOES */
+}
+nav#menu a:hover {
+    color: white; /* MUDA A COR DO NOME QUANDO O MOUSE PASSAR POR ELE */
 }
 
 
@@ -87,70 +138,111 @@ figure.foto-legenda:hover figcaption {
 }
 
 
-/* FORMATACAO DO MENU */
-nav#menu {
-    display: block; /* ESSA CONFIGURACAO DIZ QUE O BLOCO PODE FLUTUAR PELA TELA DO SITE */
-}
-nav#menu ul { /* <nav>("#" QUER DIZER A ID) menu (É O NOME DA ID QUE DEI NO index.html) ul (É O QUE VOU ALTERAR DO <nav>)*/
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute; /* POSIÇÃO DE TIPO ABSOLUTA PARA PASSAR POR CIMA DOS DOCUMENTOS */
-    top: -21px; /* DEIXA ELE NA MARGEM DO TOPO DA TELA */
-    left: 900px; /* JOGA OS BOTOES MAIS PARA A DIREITA DA TELA */
-}
-nav#menu li {
-    display: inline-block; /* ESSA CONFIGURAÇÃO FAZ COM QUE OS NOME FIQUEM LADO A LADO VERTICALMENTE */
-    background-color: lightgrey; /* ADICIONA UM QUADRADO COM COR DE FUNDO CINZA CLARO */
-    padding: 10px;/* ADICIONA A BORDA NO TAMANHO DE 10PX */
-    margin: 2px; /* MARGEM DE ESPAÇO ENTRE OS BOTOES */
-    -webkit-transition: background-color 1s; /* NAVEGADOR safari */
-    -moz-transition: background-color 1s; /* NAVEGADOR mozila */
-    -ms-transition: background-color 1s; /* NAVEGADOR microsoft */
-    -o-transition: background-color 1s; /* NAVEGADOR opera */
-    transition: background-color 1s; /* GERA UM EFEITO DE TRANSIÇÃO DE 1 SEGUNDO NO BOTAO */
-}
-nav#menu li:hover {
-    background-color: gray; /* ESSA CONFIG GERA UM EFEITO DE COR AO PASSAR O MOUSE EM CIMA DO BOTAO */
-}
-nav#menu h1 {
-    display: none; /* ESSA CONFIGURACAO DIZ QUE O ELEMENTO NOME DA TEG <h1> NÃO VAI APARECER NO NAVEGADOR */
-}
-nav#menu a {
-    color: black; /* COR DA FONTE DA TAG <a> ANCORA QUE SÃO OS BOTOES */
-    text-decoration: none; /* PARA TIRAR O SUBLINHADO DOS NOMES DOS BOTOES */
-}
-nav#menu a:hover {
-    color: white; /* MUDA A COR DO NOME QUANDO O MOUSE PASSAR POR ELE */
-}
-
-
-/* CONFIGURAÇÃO DA section - aside & footer */
+/* CONFIGURAÇÃO DA section */
 section#corpo {
     display: block; /* PARA A section SER MOSTRADA COMO BLOCO */
-    width: 750px; /* LARGURA EM PIXEL DO BLOCO */
+    width: 910px; /* LARGURA EM PIXEL DO BLOCO */
     float: left; /* FAZ ESSA PARTE FLUTUAR NA ESQUERDA */
     border-right: 1px solid #606060; /* CRIA LINHA NA LATERAL DIREITA */
-    padding: 10px; /* CRIA ESPAÇO NA LINHA COM AS LETRAS */
+    padding: 5px; /* CRIA ESPAÇO NA LINHA COM AS LETRAS */
 }
+
+
+/* FOPRMATANDO A PARTE "SAIBA TUDO SOBRE GOOGLE GLASS" */
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #d3d3d3;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+/* FORMATANDO OS TITULOS h1 h2 h3 DO CABECALHO DO ARTICLE */
+header#cabecalho-artigo h1 {
+    font-family: FonteLogo;
+    font-size: 22pt; /* TAMANHO EM PONTOS */
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+header#cabecalho-artigo h2 {
+    font-size: 13pt; /* TAMANHO EM PONTOS */
+    color: #cecece;
+    background-color: #ffffff;
+    margin: -5px;
+}
+header#cabecalho-artigo h3 {
+    font-size: 12px; /* TAMANHO EM PIXEL */
+    color: #606060;
+}
+.direita {
+    text-align: right;
+}
+
+
+/* TABELA DE RESOLUCAO */
 table#tabelaspec caption {
     color: #606060; /* COR DO TUTULO DA TABELA */
-    font-size: 15px; /* TAMANHO DA FONTE DO TITULO */
-    font-family: 'Edu QLD Beginner', cursive; /* ESTILO DA FONTE */
+    font-size: 19px; /* TAMANHO DA FONTE DO TITULO */
 }
 table#tabelaspec {
     border: 1px solid #606060; /* CRIA LINHAS EM FORMA DE QUADRADO PARA TRNASFORMAR EM BORDA */
     border-spacing: 0px; /* NAO GERA ESPACO ENTRE AS BORDAS */
-    margin: auto; /* PARA CENTRALIZAR O QUADRADO(BORDA) */
+    text-align: center; /* CENTRALIZAR O TEXTO */
+    vertical-align: middle; /* TIPO DE ALINHAMENTO DAS PASLAVRAS */
+
 }
 table#tabelaspec td {
     border: 1px solid #606060; /* CRIA LINHAS PARA FAZER UMA BORDA NO <td> */
+    padding: 6px; /* CRIAR ESPAÇO EM PIXEL NOS QUADRADOS */
+}
+table#tabelaspec td.ce { /* td.ce FOI UMA CLASSE CRIADA DENTRO DA td PARA CONFIGURARMOS ELA */
+    color: #ffffff;
+    background-color: #606060; /* COR DO FUNDO */
+    vertical-align: top; /* ALINHAMENTO NO TOPO */
+    text-align: right; /* ALINAHMENTOS DAS PALAVRAS A DIREITA */
+    font-weight: bold; /* CRIAR NEGRITO */
+}
+table#tabelaspec td.cd { /* td.cd FOI UMA CLASSE CRIADA DENTRO DA td PARA CONFIGURARMOS ELA */
+    color: black;
+    background-color: #d3d3d3; /* COR DO FUNDO */
+}
+table#tabelaspec caption span {
+    display: block; /* MOSTRAR ELE COMO BLOCO FLUTUANTE PARA SAIR DO TEXTO DELE ORIGINAL */
+    float: right; /* A FLUTUAÇÃO FICA PARA A DIREITA DO BLOCO */
+    color: #000000;
+    font-size: 10px; /* TAMANHO DA FONTE */
+    font-weight: bold; /* DEIXAR NEGRITO */
+    margin-top: 10px; /* FAX O NOME FICAR BEM POSICIONADO */
 }
 
+
+/* CONFIGURAÇÃO DA aside (DIREITA DA TELA) */
 aside#lateral {
     display: block; /* PARA A section SER MOSTRADA COMO BLOCO */
-    width: 620px; /* LARGURA EM PIXEL DO BLOCO */
+    width: 500px; /* LARGURA EM PIXEL DO BLOCO */
     float: right; /* FAZ ESSA PARTE FLUTUAR NA DIREITA */
+    background-color: #cecece; /* COR DO FUNDO */
+    padding: 10px; /* ESPÇOS ENTRE ELES */
+    margin-top: 10px; /* MAREM DE CIMA PARA DESCOLAR DO TOPO */
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
 }
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 10px;
+}
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px 0px 5px 10px;
+    margin-top: 10px;
+}
+
+
+
+/* CONFIGURAÇÃO DA footer */
 footer#rodape {
     clear: both; /* ESSA CONFIGURACAO VAI ORGANIZAR O RODAPE QUE ESTA NA FLUTUACAO DA DIREITA E ESQUERDA JOGANDO-O PARA BAIXO */
     border-top: 1px solid #606060; /* CRIO UMA LINHA NO TOP DO footer PARA PREENCHER CONFORME O DESING */
