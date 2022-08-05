@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6772dcdf-b723-452a-b1ed-4d30cc592972" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/projeto-glass-html5/testejc01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projeto-glass-html5/testejs02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto-glass-html5/testejs03.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MaldicaoOlaMundo.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/MaldicaoOlaMundo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,22 +34,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/meus_projetos_html/projeto-glass-html5/index.html&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/meus_projetos_html/projeto-glass-html5",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\meus_projetos_html\projeto-glass-html5" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\meus_projetos_html\projeto-glass-html5" />
       <recent name="D:\meus_projetos_html" />
@@ -94,7 +95,7 @@
       <workItem from="1658953949148" duration="594000" />
       <workItem from="1659022338996" duration="8827000" />
       <workItem from="1659616859281" duration="13881000" />
-      <workItem from="1659706021573" duration="1069000" />
+      <workItem from="1659706021573" duration="4170000" />
     </task>
     <servers />
   </component>
