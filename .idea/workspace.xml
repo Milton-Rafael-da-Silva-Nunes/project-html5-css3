@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6772dcdf-b723-452a-b1ed-4d30cc592972" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/projeto-glass-html5/testejc01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto-glass-html5/testejs02.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projeto-glass-html5/_css/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/_css/estilo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projeto-glass-html5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MaldicaoOlaMundo.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/MaldicaoOlaMundo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="29LPnkfNoWthDRur0CXpncUKz06" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,8 +51,14 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\meus_projetos_html\projeto-glass-html5" />
+      <recent name="D:\meus_projetos_html" />
+    </key>
+  </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration name="MaldicaoOlaMundo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/meus_projetos_html/MaldicaoOlaMundo.html" useBuiltInWebServerPort="true">
+    <configuration name="MaldicaoOlaMundo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/meus_projetos_html/projeto-glass-html5/MaldicaoOlaMundo.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/meus_projetos_html/projeto-glass-html5/index.html" useBuiltInWebServerPort="true">
@@ -84,12 +93,24 @@
       <workItem from="1658934219278" duration="5083000" />
       <workItem from="1658953949148" duration="594000" />
       <workItem from="1659022338996" duration="8827000" />
-      <workItem from="1659616859281" duration="7524000" />
+      <workItem from="1659616859281" duration="13881000" />
+      <workItem from="1659706021573" duration="1069000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
