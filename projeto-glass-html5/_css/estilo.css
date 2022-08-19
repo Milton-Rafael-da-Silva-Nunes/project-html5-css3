@@ -189,7 +189,7 @@ table#tabelaspec {
     border-spacing: 0px; /* NAO GERA ESPACO ENTRE AS BORDAS */
     text-align: center; /* CENTRALIZAR O TEXTO */
     vertical-align: middle; /* TIPO DE ALINHAMENTO DAS PASLAVRAS */
-
+    margin: 0 auto; /* ALINHAR TABELA DAO CENTRO DA PAGINA */
 }
 table#tabelaspec td {
     border: 1px solid #606060; /* CRIA LINHAS PARA FAZER UMA BORDA NO <td> */

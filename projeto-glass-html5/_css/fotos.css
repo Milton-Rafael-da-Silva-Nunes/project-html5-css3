@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+ul#album-fotos {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden; /* ESSA CONFIG TIRA O ESPAÇO QUE SOBRA EM CADA LINHA, DEIXANDO ELA BEM AJUSTADA NO SEU DEVIDO TAMANHO */
+    list-style: none; /* DIZ QUE O ESTILO DA LISTA É NENHUM */
+}
+
+ul#album-fotos li {
+    float: left; /* FLUTAÇÃO A ESQUERDA */
+    width: 200px; /* LARGURA */
+    height: 200px; /* ALTURA */
+    margin: 10px; /* ESPAÇO ESTRE CADA FOTO */
+    border: 5px solid #ffffff; /* CRIA UMA BORDA BRANCA (PARA DAR EFEITO DE UMA PEQUENA FOLHA FLUTUANTE) PELO TAMANHO DO QUADRADO CRIADO NO width & height */
+    background-color: #ffffff; /* COR DO FUNDO DO QUADRADO BRANCO */
+    box-shadow: 1px 1px 7px rgba(0,0,0,.4); /* CRIA SOMBRA COM ESPALHAMENTO DE 7px */
+    -webkit-transition: all .3s ease-in; /* EFEITO DE TRANSIÇÃO ("all" = TODOS / ".3s" = 0.3 SEGUNDOS / "ease-in" = EFEITO) */
+}
+ul#album-fotos li span {
+    opacity: 0; /* PARA AS LEGENDAS DAS FOTOS FICAREM INVISIVEIS */
+    color: #ffffff; /* COR FONTE */
+    text-shadow: 1px 1px 2px #000000; /* TAMANHO HORIZONTAL E VERTICAL, ESPALHAMENTO E COR */
+    background-color: rgba(0,0,0,.3); /* COR DO FUNDO EM RGBA COM COMBRAS */
+    font-size: 9pt; /* TAMANHO FONTE */
+    line-height: 370px; /* PARA DEIXAR A LINHA DE TEXTO NA PARTE INFERIOR DA FOTO */
+    padding: 5px; /* GERAR ESPAÇO DE 5px */
+}
+ul#album-fotos li:hover {
+    /* ESSA CONFIG GERA UM ZOOM PARA FRENTE NA IMAGEM NO PROPRIO li */
+    -webkit-transform: scale(1.5);
+}
+ul#album-fotos li:hover span {
+    /* ESSA CONFIG FAZ APARECER A LEGENDA AO PASSAR O MOUSE PELA FOTO */
+    opacity: 1;
+}
+
+ul#album-fotos li#foto01 {
+    background: url("../_imagens/galeria-01.jpg");
+    background-position: 50% 50%; /* ESSA CONFIG FAZ A FOTO FICAR AO MEIO PASSANDO 50% DELA NA VERTICAL E HORIZONTAL */
+    background-size: 400px 400px; /* COLOCAR O TAMANHO DA IMAGEM EM PIXEL */
+    background-color: #ffffff; /* COR FUNDO */
+}
+ul#album-fotos li#foto01:hover {
+    /* CRIAR ZOOM PARA O FUNDO AO PASSAR COM MOUSE NA FOTO */
+    background-position: 0px 0px; /* POSIÇÃO DA IMAGEM AO PASSAR MOUSE (FICARA NO CENTRO) */
+    background-size: 200px 200px; /* DIMENSOES DA IMAGEM (PRECISA TESTAR ATE A IMAGEM FICAR TODA NO QUADRDADO) */
+}
+
+ul#album-fotos li#foto02 {
+    background: url("../_imagens/galeria-02.jpg");
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto02:hover {
+    /* CRIAR ZOOM AL PASSAR COM MOUSE NA FOTO */
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto03 {
+    background: url("../_imagens/galeria-03.jpg");
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto03:hover {
+    /* CRIAR ZOOM AL PASSAR COM MOUSE NA FOTO */
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto04 {
+    background: url("../_imagens/galeria-04.jpg");
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto04:hover {
+    /* CRIAR ZOOM AL PASSAR COM MOUSE NA FOTO */
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto05 {
+    background: url("../_imagens/galeria-05.jpg");
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto05:hover {
+    /* CRIAR ZOOM AL PASSAR COM MOUSE NA FOTO */
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto06 {
+    background: url("../_imagens/galeria-06.jpg");
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto06:hover {
+    /* CRIAR ZOOM AL PASSAR COM MOUSE NA FOTO */
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
