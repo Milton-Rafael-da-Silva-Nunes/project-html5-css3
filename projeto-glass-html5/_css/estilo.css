@@ -9,7 +9,7 @@
 /* Formatação de Textos e Cores (Corpo e Paragrafos)*/
 body{
     font-family: Arial, sans-serif;
-    background-color: #d3d3d3; /* COR DO FUNDO DA PAGINA (CORPO) */
+    background-color: #cecece; /* COR DO FUNDO DA PAGINA (CORPO) */
     color: rgba(0, 0, 0, 1); /* CORES EM RGB PARA AS LETRAS DO CORPO*/
 }
 
@@ -18,8 +18,8 @@ body{
 div#interface {
     width: 1450px;
     background-color: #ffffff; /* COR DO FUNDO DA INTERFACE */
-    margin: -21px auto 0px auto; /* MARGEM DA BORDA (CIMA * DIREITA * BAIXO * ESQUERDA) */
-    box-shadow: 0px 0px 20px #888888; /* , rgba(0, 0, 0, .9) /* CRIA SOMBRA ATRÁS DA INTERFACE */
+    margin: -20px auto 0px auto; /* MARGEM DA BORDA (CIMA * DIREITA * BAIXO * ESQUERDA) */
+    box-shadow: 0px 0px 30px #000000; /* , rgba(0, 0, 0, .9) /* CRIA SOMBRA ATRÁS DA INTERFACE */
     padding: 20px; /* ESSA CONFIG GERA UM ESPAÇO EM CIMA, DIREITA, BAIXO E ESQUERDA DAS PALAVRAS PARA NÃO FICAREM GRUDAS A BORDA */
 }
 
@@ -27,13 +27,13 @@ div#interface {
 /* CABECALHO */
 header#cabecalho img#icone-oculos {
     position: absolute; /* DEIXAR A IMAGEM EM TAMANHO ABSOLUTO PARA FLUTUAR PELA PAGINA */
-    top: 53px; /* DEIXAR NO TOP COM PIXEL DE 50 */
-    left: 1410px; /* MOVER PARA ESQUERDA NO TAMNHO DE 1380 PIXEL */
+    top: 65px; /* DEIXAR A LINHA DE CIMA EM 65 PIXEL */
+    left: 1360px; /* MOVER PARA ESQUERDA NO TAMNHO DO QUADRADO (LINHA) PARA A ESQUERDA */
 }
 /* IMAGEM glass */
 header#cabecalho {
     border-bottom: 1px gray solid; /*  CONFIGURACAO PARA CRIAR DIVISAO (LINHA)*/
-    height: 140px; /* DEFINE O TAMANHO DO CABECALHO (LINHA DE DIVISAO) */
+    height: 155px; /* DEFINE O TAMANHO DO CABECALHO (LINHA DE DIVISAO) */
     background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 92px; /* DIZ QUE E SO UMA E DEFINO OS TAMANHOS */
 }
 /* CONFIGURACAO DO CABEÇALHO COR E FONTE */
@@ -76,7 +76,7 @@ nav#menu {
 }
 nav#menu ul { /* <nav>("#" QUER DIZER A ID) menu (É O NOME DA ID QUE DEI NO index.html) ul (É O QUE VOU ALTERAR DO <nav>)*/
     list-style: none;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     text-transform: uppercase;
     position: absolute; /* POSIÇÃO DE TIPO ABSOLUTA PARA PASSAR POR CIMA DOS DOCUMENTOS */
     top: -21px; /* DEIXA ELE NA MARGEM DO TOPO DA TELA */
@@ -84,23 +84,25 @@ nav#menu ul { /* <nav>("#" QUER DIZER A ID) menu (É O NOME DA ID QUE DEI NO ind
 }
 nav#menu li {
     display: inline-block; /* ESSA CONFIGURAÇÃO FAZ COM QUE OS NOME FIQUEM LADO A LADO VERTICALMENTE */
-    background-color: lightgrey; /* ADICIONA UM QUADRADO COM COR DE FUNDO CINZA CLARO */
+    background-color: #cecece; /* ADICIONA UM QUADRADO COM COR DE FUNDO CINZA CLARO */
     padding: 10px;/* ADICIONA A BORDA NO TAMANHO DE 10PX */
     margin: 2px; /* MARGEM DE ESPAÇO ENTRE OS BOTOES */
+    box-shadow: 4px 5px 15px rgba(0,0,0,.4); /* SOMBRAS NO BOTÃO */
     -webkit-transition: background-color 1s; /* NAVEGADOR safari */
     -moz-transition: background-color 1s; /* NAVEGADOR mozila */
     -ms-transition: background-color 1s; /* NAVEGADOR microsoft */
     -o-transition: background-color 1s; /* NAVEGADOR opera */
     transition: background-color 1s; /* GERA UM EFEITO DE TRANSIÇÃO DE 1 SEGUNDO NO BOTAO */
+
 }
 nav#menu li:hover {
-    background-color: gray; /* ESSA CONFIG GERA UM EFEITO DE COR AO PASSAR O MOUSE EM CIMA DO BOTAO */
+    background-color: #606060; /* ESSA CONFIG GERA UM EFEITO DE COR AO PASSAR O MOUSE EM CIMA DO BOTAO */
 }
 nav#menu h1 {
     display: none; /* ESSA CONFIGURACAO DIZ QUE O ELEMENTO NOME DA TEG <h1> NÃO VAI APARECER NO NAVEGADOR */
 }
 nav#menu a {
-    color: black; /* COR DA FONTE DA TAG <a> ANCORA QUE SÃO OS BOTOES */
+    color: #000000; /* COR DA FONTE DA TAG <a> ANCORA QUE SÃO OS BOTOES */
     text-decoration: none; /* PARA TIRAR O SUBLINHADO DOS NOMES DOS BOTOES */
 }
 nav#menu a:hover {
@@ -172,7 +174,7 @@ header#cabecalho-artigo h2 {
 }
 header#cabecalho-artigo h3 {
     font-size: 12px; /* TAMANHO EM PIXEL */
-    color: #606060;
+    color: #cecece;
 }
 .direita {
     text-align: right;
@@ -189,7 +191,7 @@ table#tabelaspec {
     border-spacing: 0px; /* NAO GERA ESPACO ENTRE AS BORDAS */
     text-align: center; /* CENTRALIZAR O TEXTO */
     vertical-align: middle; /* TIPO DE ALINHAMENTO DAS PASLAVRAS */
-    margin: 0 auto; /* ALINHAR TABELA DAO CENTRO DA PAGINA */
+    margin: 0 auto; /* ALINHAR TABELA AO CENTRO DA PAGINA */
 }
 table#tabelaspec td {
     border: 1px solid #606060; /* CRIA LINHAS PARA FAZER UMA BORDA NO <td> */

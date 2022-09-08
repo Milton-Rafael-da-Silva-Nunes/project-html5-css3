@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+div img#icone {
+    position: absolute;
+    top: 65px;
+    left: 1360px;
+}
+
+div#tv-radio {
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background: url("../_imagens/radio-tv.png") no-repeat;
+}
+
+audio#musica {
+    display: block;
+    position: relative;
+    left: 569px;
+    top: 487px;
+    width: 311px;
+}
+
+video#filme {
+    display: block;
+    position: relative;
+    left: 87px;
+    top: 65px;
+    width: 440px; /* DEFINI O MESMO TAMANHO DO QUADRDADO PRETO DA TELEVISAO PARA NAO FICAR FEIO AO DAR PLAYER */
+}

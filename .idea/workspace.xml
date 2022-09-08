@@ -7,9 +7,9 @@
     <list default="true" id="6772dcdf-b723-452a-b1ed-4d30cc592972" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projeto-glass-html5/_css/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/_css/estilo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projeto-glass-html5/_css/fotos.css" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/_css/fotos.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projeto-glass-html5/_textos/fotos-txt.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/_textos/fotos-txt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projeto-glass-html5/fotos.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/fotos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-glass-html5/_css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/_css/media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-glass-html5/multimidia.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/multimidia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-glass-html5/specs.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/specs.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,8 @@
       <workItem from="1660661820753" duration="80000" />
       <workItem from="1660823507570" duration="7549000" />
       <workItem from="1660850864576" duration="4640000" />
-      <workItem from="1660908918020" duration="8630000" />
+      <workItem from="1660908918020" duration="19250000" />
+      <workItem from="1662655117488" duration="3593000" />
     </task>
     <servers />
   </component>
