@@ -9,15 +9,15 @@
 /* Formatação de Textos e Cores (Corpo e Paragrafos)*/
 body{
     font-family: Arial, sans-serif;
-    background-color: #cecece; /* COR DO FUNDO DA PAGINA (CORPO) */
-    color: rgba(0, 0, 0, 1); /* CORES EM RGB PARA AS LETRAS DO CORPO*/
+    background-color: #ffffff; /* COR DO FUNDO DA PAGINA (CORPO) */
+    color: #000000; /* CORES EM RGB PARA AS LETRAS DO CORPO*/
 }
 
 
 /* INTERFACE */
 div#interface {
     width: 1450px;
-    background-color: #ffffff; /* COR DO FUNDO DA INTERFACE */
+    background-image: linear-gradient(500deg, white, gray); /* COR DO FUNDO DA INTERFACE */
     margin: -20px auto 0px auto; /* MARGEM DA BORDA (CIMA * DIREITA * BAIXO * ESQUERDA) */
     box-shadow: 0px 0px 30px #000000; /* , rgba(0, 0, 0, .9) /* CRIA SOMBRA ATRÁS DA INTERFACE */
     padding: 20px; /* ESSA CONFIG GERA UM ESPAÇO EM CIMA, DIREITA, BAIXO E ESQUERDA DAS PALAVRAS PARA NÃO FICAREM GRUDAS A BORDA */
@@ -107,6 +107,7 @@ nav#menu a {
 }
 nav#menu a:hover {
     color: white; /* MUDA A COR DO NOME QUANDO O MOUSE PASSAR POR ELE */
+
 }
 
 
@@ -153,8 +154,8 @@ section#corpo {
 /* FOPRMATANDO A PARTE "SAIBA TUDO SOBRE GOOGLE GLASS" */
 article#noticia-principal h2 {
     font-size: 13pt;
-    color: #606060;
-    background-color: #d3d3d3;
+    color: #000000;
+    background-image: linear-gradient(500deg, white, gray);
     padding: 5px 0px 5px 10px;
     margin: 10px 0px 10px 0px;
 }
@@ -168,9 +169,10 @@ header#cabecalho-artigo h1 {
 }
 header#cabecalho-artigo h2 {
     font-size: 13pt; /* TAMANHO EM PONTOS */
-    color: #cecece;
-    background-color: #ffffff;
+    color: #A9A9A9;
+    background-image: linear-gradient(500deg, white, gray);
     margin: -5px;
+    width: 905px;
 }
 header#cabecalho-artigo h3 {
     font-size: 12px; /* TAMANHO EM PIXEL */
@@ -235,10 +237,11 @@ aside#lateral h1 {
     margin-top: 10px;
 }
 aside#lateral h2 {
+    text-align: left;
     background-color: #606060;
     font-size: 13pt;
     color: #ffffff;
-    padding: 5px 0px 5px 10px;
+    padding: 12px 0px 12px 12px;
     margin-top: 10px;
 }
 
@@ -251,6 +254,13 @@ footer#rodape {
 }
 footer#rodape p {
     text-align: center; /* ALINHO O TEXTO DO RODAPE NO CENTRO */
+}
+footer#rodape a {
+    color: white;
+}
+footer#rodape a:hover {
+    -webkit-transition: all .4s ease-in;
+    color: black;
 }
 
 

@@ -34,3 +34,9 @@ video#video-google-glass {
     position: relative;
     width: 910px;
 }
+
+video#video-mais-recente {
+    display: block;
+    width: 500px;
+    margin-top: -15px;
+}

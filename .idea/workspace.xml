@@ -6,11 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6772dcdf-b723-452a-b1ed-4d30cc592972" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-glass-html5/_css/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/_css/estilo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projeto-glass-html5/_css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/_css/form.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projeto-glass-html5/_css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/_css/media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projeto-glass-html5/_javascript/funcoes.js" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/_javascript/funcoes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projeto-glass-html5/fale-conosco.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/fale-conosco.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-glass-html5/fotos.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/fotos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projeto-glass-html5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-glass-html5/multimidia.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/multimidia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-glass-html5/specs.html" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-glass-html5/specs.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +115,7 @@
       <workItem from="1662751845059" duration="2391000" />
       <workItem from="1663098532466" duration="532000" />
       <workItem from="1663187023892" duration="1190000" />
-      <workItem from="1663851706180" duration="9547000" />
+      <workItem from="1663851706180" duration="19329000" />
     </task>
     <servers />
   </component>
