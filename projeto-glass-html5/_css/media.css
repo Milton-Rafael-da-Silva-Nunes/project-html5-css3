@@ -28,3 +28,9 @@ video#filme {
     top: 65px;
     width: 440px; /* DEFINI O MESMO TAMANHO DO QUADRDADO PRETO DA TELEVISAO PARA NAO FICAR FEIO AO DAR PLAYER */
 }
+
+video#video-google-glass {
+    display: block;
+    position: relative;
+    width: 910px;
+}
